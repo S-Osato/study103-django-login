@@ -1,0 +1,24 @@
+{% extends "register/base.html" %}
+{% block content %}
+<main>
+  <h1>マイページ</h1>
+  <div class="container">
+    <div class="row">
+      <span class="col col-lg-2">姓:</span>
+      <span class="col">{{ user.first_name }}</span>
+    </div>
+    <div class="row">
+      <span class="col col-lg-2">名:</span>
+      <span class="col">{{ user.last_name }}</span>
+    </div>
+    <div class="row">
+      <span class="col col-lg-2">ユーザ名:</span>
+      <span class="col">{{ user.username }}</span>
+    </div>
+    <div class="row">
+      <span class="col col-lg-2">email:</span>
+      <span class="col">{{ user.email }}</span>
+    </div>
+  </div>
+</main>
+{% endblock %}
